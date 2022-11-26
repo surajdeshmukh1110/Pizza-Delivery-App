@@ -1,0 +1,64 @@
+<h1> Pizza Delivery SignUp </h1>
+       <div >
+        <!-- Background Image --> 
+        <span> <img class="SignUpBackGround" src="../../assets/SignUpBackground.png"></span>
+         
+        <!--Shef Logo Image-->
+        <img class="SignUpShef" src="../../assets/SignUpShef.jpg" alt="SignUpShef">
+
+        <!--Class To Give Center -->
+       <div class="center">
+
+        <h2>SignUp</h2>
+        <form #SignUpForm='ngForm' method="post" id="form">
+            <div class="divClass">
+            <div class="txt_Field">
+                <!-- <label>Name </label> -->
+                <input placeholder="Name" name="nameUser" #nameUser="ngModel" ngModel type="text" required id="name">
+                <p class="error">{{nameUserError}}</p>
+
+            </div>
+              
+            <div class="txt_Field">
+                <!-- <label>Mobile Number</label> -->
+                <input placeholder="Mobile Number " name="mobile" #mobile="ngModel" ngModel type="number" required id="mobileNumber">
+                <p class="error">{{mobileError}}</p>
+
+            </div>
+
+            <!-- TextBox For Address -->
+            <div class="txt_Field">
+                <input placeholder="Address" name="address" #address="ngModel" ngModel type="text" required id="address">
+                <p class="error">{{addressError}}</p>
+            </div>
+
+
+                <!-- TextBox For Email -->
+            <div class="txt_Field">
+                <input placeholder="Email" type="mail" name="email" #email="ngModel" ngModel required id="eMail">
+                <p class="error">{{emailError}}</p>
+
+            </div>
+
+                <!-- TextBox For Password -->
+             <div class="txt_Field">
+                 <input placeholder="Password" name="password" password="ngModel" ngModel type="password" required id="password">
+                <p class="error">{{passwordError}}</p>
+            </div>
+             
+            <!-- TextBox For Conferm Password -->
+            <div class="txt_Field">
+                <input placeholder="Conferm Password" name="password2" #password2="ngModel" ngModel type="password" required id="confermPassword">
+                <p class="error">{{password2Error}}</p>
+            </div>
+
+        </div>
+        <!--Class For Button -->
+            <div class="pass"></div>
+            <br>
+             <input type="button" (click)="validateInputs(SignUpForm)" value="SignUp" id="submitButton">
+            </form>
+        </div>
+    </div>       
+    
+       
