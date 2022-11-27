@@ -1,0 +1,162 @@
+.SignUpBackGround{
+
+    margin: 0;
+    padding: 0;
+    
+    font-family: Helvetica;
+
+    overflow: hidden;
+    background-image: url("../../assets/SignUpBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 743px;
+    width: 1463px;
+    
+}
+
+/* Heading i.e Pizza Delivery System */
+h1{
+    position: absolute;
+    left: 43%;
+    top: -1px;
+    font-size: 58px;
+    color: white;
+    font-style: italic;
+    font-family: cursive;
+}
+
+/* .tittlePizzaEatingCartun{ 
+    height: 2px;
+    position: relative;
+    border-radius: 20px;
+    padding: 5px;
+    animation: moveImage 5s infinite ;
+    animation-direction:normal;
+
+} */
+
+/* For Moving The Image */
+@keyframes moveImage {
+    0% {left: 350px;top: 30px;}
+   100% {left: 650px;top: 30px;}
+}
+
+/* Give the Center Box  */
+.center{
+
+    position: absolute;
+    top: 52%;
+    left: 61%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+
+}
+
+/* Heading i.e SignUp Heading */
+.center h2{
+   
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid royalblue;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+   
+    /* position:relative;
+    border-bottom: 2px solid blueviolet;
+    margin :30px 0; */
+}
+.SignUpShef {
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 19px;
+    margin-left: 61px;
+    position: absolute;
+    top: 0%;
+    right: 2%;
+}
+
+.txt_Field input{
+    width: 220px;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background:none;
+    outline: none;
+    border-bottom-style: solid;
+    border-bottom-color:royalblue;
+    margin-bottom: 5px;
+}
+.divClass{
+    text-align: center;
+}
+
+.txt_Field label{
+    
+    color: blueviolet;
+    transform: translate(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_Field span::after{
+    content:'';
+    position: absolute;
+    top: px;
+    left: 0;
+    width: 100px;
+    height: 1px;
+    
+    /* background: blueviolet; */
+
+}
+
+.txt_Field input:focus label,
+.txt_Field input:valid label {
+top: 5px;
+color: blueviolet;
+
+}
+
+.txt_Field input:focus span::before
+.txt_Field input:valid span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: 10px 0 20px 5px;
+    color:blueviolet;
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+input[type="button"]{
+    width: 100%;
+    height: 50px;
+    border: solid;
+    background-color:darkcyan;
+    border-radius: 25px;
+    font-size: 20px;
+    color:white;
+    font-weight: 500;
+    cursor: pointer;
+    outline:none;
+}
+
+.error{
+    color: red;
+    line-height: 10px;
+    font-size: smaller;
+}

@@ -1,0 +1,41 @@
+<div class="body">
+    <h1> Pizaa Express </h1>
+<span> <img class="tittleDeliveryLogo" src="../../assets/pizzaDeliver.png" alt="pizzaDeliver Logo"></span>
+<img class="logo" src="../../assets/PizzaLogo.png" alt="PizzaLogo">
+<div class="center">
+
+   
+   <h2>Login</h2>
+   
+   <form  id="loginformId" action="/">
+   
+       <div class="txt_Field" >
+           <!-- <label>User Name </label> -->
+           <input placeholder="User Name" #userName type="text" required id="myUserName">
+           <p class="error">{{emailError}}</p>
+
+       </div>
+
+       <div class="txt_Field" >
+           <!-- <label>Password</label> -->
+           <input placeholder="Password" #password type="password" required id="myPassword">
+           <p class="error">{{passError}}</p>
+       </div>
+
+       <div class="pass">Forgot Password</div>
+        <button type="button " (click)="validateInputs(userName.value,password.value)">Login</button>
+        <div class="signup_link">
+           <span></span>
+           Not a Member ? <a routerLink="/signUp">SignUp</a>
+        
+       </div>
+       </form>
+   </div>
+
+</div>
+<!-- <div *ngIf="page=='SignUp'">
+    <app-sign-up></app-sign-up>
+</div>
+<div *ngIf="page=='home'">
+    <app-home-page></app-home-page>
+</div> -->

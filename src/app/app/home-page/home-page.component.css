@@ -1,0 +1,64 @@
+
+/* @import url(“https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css”); */
+
+.navbar{
+
+    background-color: lightblue;
+    height: 100px;
+}
+.logo{
+    height: 90px;
+    margin-top: -10px;
+    margin-left: -19px;
+}
+.menu{
+    font-size: 20px;
+}
+.item img{
+    width:60%;
+    height: 400px;
+    margin-left: 20%;
+
+}
+.tittle{
+
+    font-style: initial;
+    color: saddlebrown;
+    position: relative;
+    top: -82px;
+    left: 49%;
+    
+    font-family: cursive;
+}
+.toppingHeading2{
+
+    font-size: 36px;
+    color: orangered;
+   }
+
+   .toppingHeading1{
+    font-size: 30px;
+    margin-left: 40px;
+   }
+.extraImfoImage{
+
+    width: 60%;
+    padding-left: 0;
+}
+
+.btn-default{
+
+    margin-right: 73px;
+    
+}
+.btn-default:hover{
+
+    scale: 115%;
+}
+.img-rounded{
+
+    width: 165%;
+}
+.orderNow{
+    margin-left: 40px;
+}
